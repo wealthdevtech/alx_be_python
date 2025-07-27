@@ -6,7 +6,7 @@ def convert_to_celsius(fahrenheit):
     print(f"{fahrenheit}°F is {answer}°C")
     
 def convert_to_fahrenheit(celsius):
-    answer = (CELSIUS_TO_FAHRENHEIT_FACTOR * celsius) + 32
+    answer = CELSIUS_TO_FAHRENHEIT_FACTOR * celsius + 32
     print(f"{celsius}°C is {answer}°F")
     
 user_input_temp = int(input("Enter the temperature to convert: "))
