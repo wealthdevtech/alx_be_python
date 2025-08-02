@@ -3,14 +3,14 @@ class BankAccount:
     def __init__(self, account_balance=0):
         self.account_balance = account_balance;
         
-    def deposit(amount):
-        account_balance += amount
+    def deposit(self, amount):
+        self.account_balance += amount
         
-    def withdraw(amount):
-        if amount < account_balance:
+    def withdraw(self, amount):
+        if amount < self.account_balance:
             return False
-        elif amount >= account_balance: 
-            account_balance -= amount;
+        elif amount >= self.account_balance: 
+            self.account_balance -= amount;
             
-    def display_balance():
-        print(f"Current balance: ${account_balance}")
+    def display_balance(self):
+        print(f"Current balance: ${self.account_balance}")
