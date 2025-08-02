@@ -13,4 +13,4 @@ class BankAccount:
             account_balance -= amount;
             
     def display_balance():
-        return account_balance
+        print(f"Current balance: ${account_balance}")
