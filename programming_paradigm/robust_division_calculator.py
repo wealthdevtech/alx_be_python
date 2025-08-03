@@ -1,10 +1,4 @@
-class safe_divide:
-    
-    def __init__(self, numerator, denominator):
-        self.numerator = numerator
-        self.denominator = denominator
-    
-    def safe_divide(self): 
+def safe_divide(numerator, denominator): 
         try: 
             num = float(numerator)
             denom = float(denominator)
