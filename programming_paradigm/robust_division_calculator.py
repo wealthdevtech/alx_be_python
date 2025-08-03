@@ -11,8 +11,9 @@ class safe_divide:
             self.numerator = float(numerator)
             self.denominator = float(denominator)
         
-            return f"The result of the division is {self.numerator / self.denominator}"
+            self.result = (f"The result of the division is {self.numerator / self.denominator}")
         except ValueError:
-            return "Error: Please enter numeric values only."
+            self.result = ("Error: Please enter numeric values only.")
         except ZeroDivisionError:
-            return "Error: Cannot divide by zero."
+            self.result = ("Error: Cannot divide by zero.")
+        return self.result;
