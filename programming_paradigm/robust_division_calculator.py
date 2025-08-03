@@ -1,4 +1,4 @@
-class safe_divide:
+class safe_divide1:
     
     def __init__(self, numerator, denominator):
         self.numerator = numerator
@@ -16,4 +16,5 @@ class safe_divide:
             self.result = ("Error: Please enter numeric values only.")
         except ZeroDivisionError:
             self.result = ("Error: Cannot divide by zero.")
+        
         return self.result;
