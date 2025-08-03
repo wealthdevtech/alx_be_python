@@ -12,6 +12,6 @@ class safe_divide:
         try:
             return self.numerator / self.denominator
         except ValueError:
-            return "Error: Please enter numeric values only."
+            return ("Error: Please enter numeric values only.")
         except ZeroDivisionError:
-            return "Error: Cannot divide by zero."
+            return ("Error: Cannot divide by zero.")
