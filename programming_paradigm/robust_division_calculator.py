@@ -10,7 +10,7 @@ class safe_divide:
         self.denominator = float(denominator)
         
         try:
-            return float(self.numerator / self.denominator)
+            return (f"The result of the division is {self.numerator / self.denominator}")
         except ValueError:
             return ("Error: Please enter numeric values only.")
         except ZeroDivisionError:
