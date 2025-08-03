@@ -4,13 +4,13 @@ class safe_divide:
         self.numerator = numerator
         self.denominator = denominator
     
-    def safe_divide(self, numerator, denominator): 
+    def safe_divide(self): 
         try: 
-            self.numerator = float(numerator)
-            self.denominator = float(denominator)
-        self.result = (f"The result of the division is {self.numerator / self.denominator}")
+            num = float(self.numerator)
+            denom = float(self.denominator)
+            return f"The result of the division is {num / denom}"
         except ValueError:
-            self.result = ("Error: Please enter numeric values only.")
+            return "Error: Please enter numeric values only."
         except ZeroDivisionError:
-            self.result = ("Error: Cannot divide by zero.")
-        return self.result
+            return "Error: Cannot divide by zero."
+        
