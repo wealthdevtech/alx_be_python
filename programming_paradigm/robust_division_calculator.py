@@ -8,7 +8,7 @@ class safe_divide:
         try: 
             self.numerator = float(self.numerator)
             self.denominator = float(self.denominator)
-            return f"The result of the division is {float(self.numerator) / float(self.denominator)}"
+            return f"The result of the division is {self.numerator / self.denominator}"
         except ValueError:
             return "Error: Please enter numeric values only."
         except ZeroDivisionError:
