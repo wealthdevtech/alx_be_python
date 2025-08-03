@@ -5,16 +5,12 @@ class safe_divide:
         self.denominator = denominator
     
     def safe_divide(self, numerator, denominator): 
-        
-        try:
-            
+        try: 
             self.numerator = float(numerator)
             self.denominator = float(denominator)
-    
-            self.result = (f"The result of the division is {self.numerator / self.denominator}")
+        self.result = (f"The result of the division is {self.numerator / self.denominator}")
         except ValueError:
             self.result = ("Error: Please enter numeric values only.")
         except ZeroDivisionError:
             self.result = ("Error: Cannot divide by zero.")
-        
-        return self.result;
+        return self.result
