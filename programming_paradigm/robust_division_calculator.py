@@ -4,10 +4,13 @@ class safe_divide:
         self.numerator = numerator
         self.denominator = denominator
     
-    def safe_divide(self, numerator, denominator):   
+    def safe_divide(self, numerator, denominator): 
+
+        self.numerator = float(self.numerator)
+        self.denominator = float(self.denominator)
         
         try:
-            return float(self.numerator) / float(self.denominator)
+            return self.numerator / self.denominator
         except ValueError:
             print("Error: Please enter numeric values only.")
         except ZeroDivisionError:
