@@ -6,8 +6,8 @@ class safe_divide:
     
     def safe_divide(self, numerator, denominator): 
 
-        self.numerator = float(self.numerator)
-        self.denominator = float(self.denominator)
+        self.numerator = float(numerator)
+        self.denominator = float(denominator)
         
         try:
             return self.numerator / self.denominator
