@@ -6,9 +6,9 @@ class safe_divide:
     
     def safe_divide(self): 
         try: 
-            num = float(self.numerator)
-            denom = float(self.denominator)
-            return f"The result of the division is {num / denom}"
+            # self.numerator = float(self.numerator)
+            # self.denominator = float(self.denominator)
+            return f"The result of the division is {self.numerator / self.denominator}"
         except ValueError:
             return "Error: Please enter numeric values only."
         except ZeroDivisionError:
