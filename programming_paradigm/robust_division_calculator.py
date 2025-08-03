@@ -6,8 +6,8 @@ class safe_divide:
     
     def safe_divide(self): 
         try: 
-            self.numerator = float(self.numerator)
-            self.denominator = float(self.denominator)
+            self.numerator = float(numerator)
+            self.denominator = float(denominator)
             return f"The result of the division is {self.numerator / self.denominator}"
         except ValueError:
             return "Error: Please enter numeric values only."
