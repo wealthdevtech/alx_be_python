@@ -1,5 +1,5 @@
 class Library:
-    def __init__(self, book):
+    def __init__(self):
         self.book = book
         
 class Book:
