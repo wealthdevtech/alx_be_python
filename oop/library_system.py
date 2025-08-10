@@ -12,7 +12,7 @@ class EBook(Book):
         self.file_size = file_size
 
     def __str__(self):
-        return f"{self.title} is written by {self.author} and is {self.file_size}MB"
+        return f"{self.title} is written by {self.author} and is {self.file_size}KB"
         
 class PrintBook(Book):
     def __init__(self, title, author, page_count):
@@ -35,6 +35,6 @@ class Library:
             if isinstance(self.book, PrintBook):
                 print(f"PrintBook: {self.book.title} by {self.book.author}, Page Count: {self.book.page_count}")
             elif isinstance(self.book, EBook):
-                print(f"EBook: {self.book.title} by {self.book.author}, File Size: {self.book.file_size}")
+                print(f"EBook: {self.book.title} by {self.book.author}, File Size: {self.book.file_size}KB")
             elif isinstance(self.book, Book):
                 print(f"Book: {self.book.title} by {self.book.author}")
