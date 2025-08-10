@@ -32,4 +32,9 @@ class Library:
         
     def list_books(self):
         for self.book in self.books:
-            print(f"{self.book.title} is written by {self.book.author}")
+            if isinstance(self.book, PrintBook):
+                print(f"PrintBook: {self.book.title} is written by {self.book.author}")
+            elif isinstance(self.book, EBook):
+                print(f"EBook: {self.book.title} is written by {self.book.author}")
+            elif isinstance(self.book, Book):
+                print(f"Book: {self.book.title} is written by {self.book.author}")
